@@ -1,0 +1,7 @@
+{
+  "name": "route-resilience-root",
+  "private": true,
+  "scripts": {
+    "build": "node build.cjs"
+  }
+}
