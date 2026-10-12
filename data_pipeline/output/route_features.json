@@ -1,13 +1,13 @@
 {
-  "overall_risk_score": 57,
+  "overall_risk_score": 58,
   "risk_level": "MODERATE",
   "average_segment_risk": 53,
-  "highest_risk_segment": "SEG_003",
+  "highest_risk_segment": "SEG_004",
   "high_risk_segment_count": 2,
   "major_factors": [
-    "High intersection density",
+    "High traffic",
     "High congestion",
-    "High traffic"
+    "High intersection density"
   ],
   "route_id": "R001",
   "segments": [
@@ -24,7 +24,7 @@
       "lighting": 0.9,
       "pedestrian_density": 0.3,
       "weather_risk": 0.1,
-      "risk_score": 39,
+      "risk_score": 38,
       "risk_level": "MODERATE",
       "major_factors": []
     },
@@ -41,7 +41,7 @@
       "lighting": 0.7,
       "pedestrian_density": 0.5,
       "weather_risk": 0.2,
-      "risk_score": 58,
+      "risk_score": 59,
       "risk_level": "MODERATE",
       "major_factors": [
         "High traffic"
@@ -60,7 +60,7 @@
       "lighting": 0.5,
       "pedestrian_density": 0.6,
       "weather_risk": 0.3,
-      "risk_score": 66,
+      "risk_score": 65,
       "risk_level": "HIGH",
       "major_factors": [
         "High intersection density"
@@ -79,7 +79,7 @@
       "lighting": 0.2,
       "pedestrian_density": 0.8,
       "weather_risk": 0.4,
-      "risk_score": 66,
+      "risk_score": 67,
       "risk_level": "HIGH",
       "major_factors": [
         "High traffic",
@@ -99,7 +99,7 @@
       "lighting": 0.8,
       "pedestrian_density": 0.4,
       "weather_risk": 0.1,
-      "risk_score": 37,
+      "risk_score": 39,
       "risk_level": "MODERATE",
       "major_factors": []
     }

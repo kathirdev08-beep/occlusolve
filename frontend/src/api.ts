@@ -195,9 +195,7 @@ export interface ResilienceResponse {
   };
 }
 
-const API_BASE = (
-  import.meta.env.VITE_API_BASE || ''
-).replace(/\/$/, '');
+const API_BASE = (import.meta.env && import.meta.env.VITE_API_BASE) || 'http://localhost:8000';
 
 export const graphApi = {
   uploadGraph: async (file: File): Promise<GraphUploadResponse> => {

@@ -7,7 +7,7 @@
       "entrypoint": "api.main:app"
     },
     "frontend": {
-      "root": "frontend",
+      "root": "frontend/",
       "framework": "vite"
     }
   },
@@ -31,7 +31,25 @@
       }
     },
     {
+      "source": "/graph",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
       "source": "/graph/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
+      "source": "/resilience",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
+      "source": "/resilience/(.*)",
       "destination": {
         "service": "app"
       }
