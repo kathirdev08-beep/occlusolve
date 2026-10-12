@@ -1,10 +1,46 @@
 {
-  "buildCommand": "node build.cjs",
-  "outputDirectory": "dist",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "app": {
+      "root": ".",
+      "framework": "fastapi",
+      "entrypoint": "api.main:app"
+    },
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite"
+    }
+  },
   "rewrites": [
     {
+      "source": "/health",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
+      "source": "/predict",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
+      "source": "/predict/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
+      "source": "/graph/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    },
+    {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": {
+        "service": "frontend"
+      }
     }
   ]
 }
